@@ -1,0 +1,23 @@
+.texto-grande {
+  font-size: 6.4rem;
+  line-height: 1.12;
+  font-family: 'Poppins';
+  font-weight: 600;
+}
+
+.texto-medio {
+  font-size: 2.4rem;
+  font-family: 'Roboto';
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+@media (max-width: 1200px) {
+  .texto-grande {
+    font-size: 4.8rem;
+  }
+
+  .texto-medio {
+    font-size: 1.8rem;
+  }
+}
