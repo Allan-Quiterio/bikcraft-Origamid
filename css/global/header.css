@@ -8,10 +8,7 @@
   gap: 2rem;
   align-items: center;
   justify-content: space-between;
-  padding: 2rem;
-  max-width: 120rem;
-  box-sizing: border-box;
-  margin: 0 auto;
+  padding: 2rem 0;
 }
 
 .header-menu {
