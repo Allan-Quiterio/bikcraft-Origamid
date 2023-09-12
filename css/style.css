@@ -13,3 +13,5 @@
 @import "./utils/components.css";
 
 @import "./bike/list-bike.css";
+
+@import "./global/footer.css";
