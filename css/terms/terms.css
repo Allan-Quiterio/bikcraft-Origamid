@@ -1,0 +1,25 @@
+.termos-conteudo {
+  margin-top: 12rem;
+  margin-bottom: 12rem;  
+}
+
+.termos-paragrafos {
+  margin: 20px 0 48px 0;
+  font-weight: 400;
+}
+
+.termos-conteudo h2 {
+  font-weight: 600;
+}
+
+.termos-paragrafos p {
+  margin-top: 12px;
+  max-width: 75ch;
+}
+
+@media (max-width: 800px) {
+  .termos-conteudo {
+    margin-top: 3rem;
+    margin-bottom: 3rem;  
+  }
+}
