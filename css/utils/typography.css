@@ -46,6 +46,10 @@
   font: 600 3.2rem/1.25 "Poppins", sans-serif;
 }
 
+.font-2-xL {
+  font: 600 3.6rem/1.1 "Poppins", sans-serif;
+}
+
 .font-1-xxl {
   font-weight: 600;
   font-size: 6.4rem;
