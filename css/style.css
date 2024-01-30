@@ -11,6 +11,7 @@
 @import "./home/insurance.css";
 
 @import "./utils/components.css";
+@import "./utils/form.css";
 
 @import "./bike/list-bike.css";
 @import "./bike/bikes.css";
@@ -21,3 +22,6 @@
 @import "./terms/terms.css";
 
 @import "./insurance/insurance.css";
+
+@import "./contact/contact.css";
+@import "./contact/store.css";

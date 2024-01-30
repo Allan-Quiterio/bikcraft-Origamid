@@ -1,0 +1,86 @@
+.lojas-fisicas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6rem 4rem;
+  padding-top: 12rem;
+  padding-bottom: 12rem;
+}
+
+.lojas-fisicas h2 {
+  grid-column: 1 / -1;
+}
+
+.lojas-fisicas > div {
+  border-radius: 0 0 5px 5px;
+  background: var(--cor-c0);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+}
+
+.lojas-fisicas-endereco {
+  position: relative;
+  padding: 3.2rem 0 3.2rem 6rem;
+}
+
+.lojas-fisicas-endereco h3::before {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 8px;
+  background-color: var(--cor-p1);
+  left: 36px;
+  top: 45px;
+}
+
+.lojas-fisicas-endereco > div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 3.2rem;
+  margin-bottom: 3.2rem;
+}
+
+.lojas-fisicas-endereco > div > div {
+  position: relative;
+  border-left: 2px solid var(--cor-c2);
+  padding-left: 14px;
+}
+
+.lojas-fisicas-endereco > div > div a {
+  display: block;
+  max-width: max-content;
+}
+
+.lojas-fisicas-endereco > div > div a:hover {
+  color: var(--cor-c6);
+}
+
+
+.lojas-fisicas-endereco span {
+  font-family: "Poppins";
+  font: 600 1.4rem/1.42 "Poppins", sans-serif;
+  position: relative;
+}
+
+.lojas-fisicas-endereco span::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-image: url("/img/icones/horario.svg");
+  position: absolute;
+  left: -28px;
+  top: 0;
+}
+
+
+@media(max-width: 800px) {
+  .lojas-fisicas-endereco > div {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .lojas-fisicas {
+    grid-template-columns: 1fr;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    gap: 3rem;
+  }
+}

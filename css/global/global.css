@@ -17,8 +17,13 @@ p,
 blockquote,
 li,
 dd,
+address,
 a {
   margin: 0;
+}
+
+address {
+  font-style: normal;
 }
 
 ul {
