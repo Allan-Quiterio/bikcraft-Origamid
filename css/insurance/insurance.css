@@ -6,7 +6,11 @@
   background: var(--cor-c12);
 }
 
-.seguros-vantagem h2 {
+.seguros-vantagens > h2 {
+  padding-top: 12rem;
+}
+
+.seguros-vantagem h3 {
   font-weight: 600;
   margin-top: 8px;
   margin-bottom: 8px;
