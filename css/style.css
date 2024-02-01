@@ -12,6 +12,7 @@
 
 @import "./utils/components.css";
 @import "./utils/form.css";
+@import "./utils/animation.css";
 
 @import "./bike/list-bike.css";
 @import "./bike/bikes.css";
