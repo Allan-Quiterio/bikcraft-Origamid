@@ -76,7 +76,7 @@
   display: inline-block;
   width: 14px;
   height: 6px;
-  background-image: url("/img/icones/seta-abrir.svg");
+  background-image: url("../../img/icones/seta-abrir.svg");
 }
 
 .seguros-perguntas button:hover::after,
