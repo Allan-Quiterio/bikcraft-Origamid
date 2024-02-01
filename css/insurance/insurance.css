@@ -85,11 +85,11 @@
   transition: .3s;
 }
 
-.seguros-perguntas dd {
+.js .seguros-perguntas dd {
   display: none;
 }
 
-.seguros-perguntas dd.ativa {
+.js .seguros-perguntas dd.ativa {
   display: block;
 }
 
