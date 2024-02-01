@@ -1,12 +1,12 @@
 // Ativar Links Menu
-const links = document.querySelectorAll('.header-menu a');
+const links = document.querySelectorAll(".header-menu a");
 
 function ativarLink(link) {
   const url = location.href;
   const href = link.href;
-  
+
   if (url.includes(href)) {
-    link.classList.add('ativo');
+    link.classList.add("ativo");
   }
 }
 
@@ -18,31 +18,42 @@ const parametros = new URLSearchParams(location.search);
 
 function ativarProduto(parametro) {
   const elemento = document.getElementById(parametro);
-  if(elemento) elemento.checked = true;
+  if (elemento) elemento.checked = true;
 }
 
 parametros.forEach(ativarProduto);
 
-console.log(parametros);
-
 
 // Perguntas frequentes
-const perguntas = document.querySelectorAll('.seguros-perguntas button');
+const perguntas = document.querySelectorAll(".seguros-perguntas button");
 
 function ativarPergunta(event) {
   const pergunta = event.currentTarget;
-  const controls = pergunta.getAttribute('aria-controls');
+  const controls = pergunta.getAttribute("aria-controls");
   const resposta = document.getElementById(controls);
 
-  resposta.classList.toggle('ativa');
-  const ativa = resposta.classList.contains('ativa');
-  pergunta.setAttribute('aria-expanded', ativa);
+  resposta.classList.toggle("ativa");
+  const ativa = resposta.classList.contains("ativa");
+  pergunta.setAttribute("aria-expanded", ativa);
 }
 
 function eventosPerguntas(pergunta) {
-  pergunta.addEventListener('click', ativarPergunta);
+  pergunta.addEventListener("click", ativarPergunta);
 }
 
-perguntas.forEach(eventosPerguntas)
+perguntas.forEach(eventosPerguntas);
 
-console.log(perguntas);
+
+// Galeria bicicletas
+const galeria = document.querySelectorAll(".bicicleta-imagens img");
+const galeriaContainer = document.querySelector(".bicicleta-imagens");
+
+function trocarImagem(event) {
+  const img = event.currentTarget;
+  galeriaContainer.prepend(img);
+  console.log(img);
+}
+
+galeria.forEach((img) => {
+  img.addEventListener("click", trocarImagem);
+});
